@@ -1,0 +1,11 @@
+{
+  "kit_id":,
+  "rfids": [
+    "123456789",
+    "987654321",
+    "abcdefghi",
+    "jklmnopqr",
+    "stuvwxzy"
+  ],
+  "kitting_new": "true"
+}

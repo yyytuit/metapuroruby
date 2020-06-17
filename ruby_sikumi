@@ -1,0 +1,154 @@
+module Professor
+def lectures; end
+end
+
+class Mathematician
+attr_accessor :first_name
+attr_accessor :last_name
+end
+
+class Mathematician
+include Professor
+attr_accessor :first_name
+attr_accessor :last_name
+def ohayo; end
+end
+
+module Employee
+def hire_date; end
+end
+
+module Professor
+include Employee
+def lectures; end
+end
+
+fermat = Mathematician.new
+fermat.
+
+class Quote
+def display
+puts "The quick brown fox jumped over the lazy dog"
+end
+end
+
+module AllCaps
+refine Quote do
+def display
+puts "THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG"
+end
+end
+end
+
+module M
+using AllCaps
+p Quote.new.display
+end
+
+
+
+module M
+  MOD = 'TEISU'
+end
+class C
+  def c_class
+    p 'cclassmethod'
+    p M::MOD
+  end
+end
+
+
+class C
+include M
+def c_class
+p 'cclassmethod'
+end
+end
+
+module M
+MOD = 'TEISU'
+def mod
+ p MOD
+end
+end
+
+
+ class C
+  def cmethod
+    p 'cmethod'
+  end
+  class << self
+    def cmethod
+      p 'selfcmeshod'
+    end
+  end
+end
+ C.new.cmethod
+C.cmethod
+
+
+str = "puts"
+str += " 2"
+str += " +"
+str += " 2"
+str
+=> "puts 2 + 2"
+eval(str)
+4
+=> nil
+
+a = 2
+b = 3
+str = "puts"
+str += " a"
+str += " +"
+str += " b"
+str
+eval(str)
+
+
+class Quote
+def initialize
+@str = "The quick brown fox "
+end
+end
+str2 = "jumped over the lazy dog"
+obj = Quote.new
+obj.instance_eval do
+puts "#{@str} #{str2}"
+end
+
+
+class Quote
+def initialize
+@str = "The quick brown fox jumped over the lazy dog"
+end
+define_method :display do
+puts @str
+end
+end
+
+
+class Quote
+def initialize
+@str = "The quick brown fox "
+end
+end
+
+def create_moethod_a_closure
+str2 = "jumped over the lazy dog"
+Quote.send(:define_method, :display) do
+puts "#{@str} #{str2}"
+end
+end
+
+class C
+def create_moethod_a_closure
+str2 = "jumped over the lazy dog"
+Quote.send(:define_method, :display) do
+puts "#{@str} #{str2}"
+end
+end
+end
+
+

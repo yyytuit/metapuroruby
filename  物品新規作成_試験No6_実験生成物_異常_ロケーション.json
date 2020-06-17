@@ -1,0 +1,15 @@
+{
+    "group_id":                     1,
+    "user_id":                      2,
+    "code":                         "j_c_no_06",
+    "status":                       "use",
+    "stock_status":                 "confirmed",
+    "kind":                         "experiment",
+    "storage_id":                   1,
+    "location_id":                  5,
+    "rfid":                         "j_no_06",
+    "experiment_no":                "j_e_no_06",
+    "experiment_on":                "2020_01_01",
+    "experiment_name":              "実験生成物試験_No6",
+    "experiment_memo":              "実験生成物のロケーションの異常系",
+  }
